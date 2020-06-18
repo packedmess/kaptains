@@ -1,746 +1,959 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>Блог</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/main.min.css" rel="stylesheet">
-    <link rel="preload" href="fonts/Circe-Bold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/Circe-Regular.woff2" as="font" crossorigin="anonymous">
-    <script>
-      document.createElement( "picture" );
-    </script>
-    <script src="js/picturefill.min.js" async=""></script>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Факультет бизнеса &quot;Капитаны&quot;</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./bundles/slick/slick.css">
   </head>
-  <body class="main-site">
-
-    <!-- Yandex.Metrika counter (если верхняя часть не сработает) -->
-    <noscript>
-        <div><img src="https://mc.yandex.ru/watch/37543275" style="position:absolute; left:-9999px;" alt=""></div>
-    </noscript>
-    <!-- /Yandex.Metrika counter -->
-    
-    <div class="main main--news" style="">
-        <div class="main__inner">
-    
+  <body>
+    <div class="main"> 
+      <div class="main__inner">
         <div class="main__header">
-        <div class="main__header-top">
+          <div class="main__header-top">
             <div class="container">
-                          <a href="https://www.rea.ru" class="main__header-univer">
-              Российский Экономический Университет <br>имени Г. В. Плеханова                </a>
-          
-                <div class="main__header-merge">
-                    <div class="main__header-conts">
-                        <a class="main__header-mail" href="mailto:info@kapitany-russia.ru">
-                info@kapitany-russia.ru                    </a>
-                        <a class="main__header-phone" href="tel:8 (800) 500 93 71">
-                8 (800) 500 93 71                    </a>
-                    </div>
-    
-                                <div class="main__header-city main__header-city--top city">
-                            <div class="city__selected">
-                  Москва                        </div>
-                            <div class="city__list">
-                                <div class="city__list-header">Выбрать город</div>
-                                <div class="city__list-inner">
-                                                        <a class="city__list-item city__list-item--active" href="/">
-                        Москва                                    </a>
-                                                        <a class="city__list-item" href="/sevastopol/">
-                        Севастополь                                    </a>
-                                                        <a class="city__list-item" href="/krasnodar/">
-                        Краснодар                                    </a>
-                                                        <a class="city__list-item" href="/saratov/">
-                        Саратов                                    </a>
-                                                        <a class="city__list-item" href="/volgograd/">
-                        Волгоград                                    </a>
-                                                        <a class="city__list-item" href="/ivanovo/">
-                        Иваново                                    </a>
-                                                        <a class="city__list-item" href="/voronezh/">
-                        Воронеж                                    </a>
-                                                        <a class="city__list-item" href="/rostov/">
-                        Ростов-на-Дону                                    </a>
-                                                        <a class="city__list-item" href="/izhevsk/">
-                        Ижевск                                    </a>
-                                                        <a class="city__list-item" href="/kazan/">
-                        Казань                                    </a>
-                                                        <a class="city__list-item" href="/ufa/">
-                        Уфа                                    </a>
-                                                        <a class="city__list-item" href="/chelyabinsk/">
-                        Челябинск                                    </a>
-                                                        <a class="city__list-item" href="/petersburg/">
-                        Санкт-Петербург                                    </a>
-                                                        <a class="city__list-item" href="/nizhnynovgorod/">
-                        Нижний Новгород                                    </a>
-                                                        <a class="city__list-item" href="/ekaterinburg/">
-                        Екатеринбург                                    </a>
-                                                        <a class="city__list-item" href="/yaroslavl/">
-                        Ярославль                                    </a>
-                                                        <a class="city__list-item" href="/tomsk/">
-                        Томск                                    </a>
-                                                        <a class="city__list-item" href="/belgorod/">
-                        Белгород                                    </a>
-                                                </div>
-                            </div>
-                        </div>
-            
-                </div>
-            </div>
-        </div>
-        <div class="main__header-bottom">
-            <div class="container">
-    
-                <div class="main__header-logo">
-                    <a class="logo" href="https://xn----7sba5acai1akfpnah1l.xn--p1ai">
-                        <img class="logo__img" src="https://xn----7sba5acai1akfpnah1l.xn--p1ai/wp-content/uploads/2020/04/logo.png" alt="">
-                        <div class="logo__text">Капитаны</div>
-                    </a>
-                </div>
-    
-                <div class="main__header-menus">
-                                <div class="main__header-city main__header-city--bottom city">
-                            <div class="city__selected">
-                  Москва                        </div>
-                            <div class="city__list">
-                                <div class="city__list-header">Выбрать город
-                                    <div class="city__close">
-                                    </div>
-                                </div>
-                                <div class="city__list-inner">
-                                                                        <a class="city__list-item city__list-item--active" href="/">
-                        Москва                                    </a>
-                                                        <a class="city__list-item" href="/sevastopol/">
-                        Севастополь                                    </a>
-                                                        <a class="city__list-item" href="/krasnodar/">
-                        Краснодар                                    </a>
-                                                        <a class="city__list-item" href="/saratov/">
-                        Саратов                                    </a>
-                                                        <a class="city__list-item" href="/volgograd/">
-                        Волгоград                                    </a>
-                                                        <a class="city__list-item" href="/ivanovo/">
-                        Иваново                                    </a>
-                                                        <a class="city__list-item" href="/voronezh/">
-                        Воронеж                                    </a>
-                                                        <a class="city__list-item" href="/rostov/">
-                        Ростов-на-Дону                                    </a>
-                                                        <a class="city__list-item" href="/izhevsk/">
-                        Ижевск                                    </a>
-                                                        <a class="city__list-item" href="/kazan/">
-                        Казань                                    </a>
-                                                        <a class="city__list-item" href="/ufa/">
-                        Уфа                                    </a>
-                                                        <a class="city__list-item" href="/chelyabinsk/">
-                        Челябинск                                    </a>
-                                                        <a class="city__list-item" href="/petersburg/">
-                        Санкт-Петербург                                    </a>
-                                                        <a class="city__list-item" href="/nizhnynovgorod/">
-                        Нижний Новгород                                    </a>
-                                                        <a class="city__list-item" href="/ekaterinburg/">
-                        Екатеринбург                                    </a>
-                                                        <a class="city__list-item" href="/yaroslavl/">
-                        Ярославль                                    </a>
-                                                        <a class="city__list-item" href="/tomsk/">
-                        Томск                                    </a>
-                                                        <a class="city__list-item" href="/belgorod/">
-                        Белгород                                    </a>
-                                                </div>
-                            </div>
-                        </div>
-            
-                    <div class="main__header-nav">
-                        <div class="main__header-toggle toggle">
-                            <div class="toggle__inner">
-                                <div class="toggle__lines">
-                                    <div class="toggle__inner-white">
-                                    </div>
-                                    <div class="toggle__inner-yellow">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <nav class="nav">
-                            <div class="nav__links">
-                                <div class="nav__links-inner">
-                                                        <a class="nav__link" href="/bakalavr/">Абитуриентам</a>
-                                        <a class="nav__link" href="/about/">О факультете</a>
-                    
-                                    <a class="nav__link" href="https://xn----7sba5acai1akfpnah1l.xn--p1ai/events/">Мероприятия</a>
-    
-                                                        <a class="nav__link" href="https://vk.com/captains_russia" target="_blank">Новости</a>
-                                                </div>
-    
-                                <a class="nav__button button" href="#">Получить консультацию</a>
-    
-                                                  <div class="nav__social">
-                                        <div class="nav__social-title">
-                                            Следите за новостями факультета <br>в социальных сетях
-                                        </div>
-                                        <div class="nav__social-links">
-                                                                    <div class="nav__social-link nav__social-link--vk">
-                                                    <a href="https://vk.com/captains_russia" target="_blank"></a>
-                                                </div>
-                                                                    <div class="nav__social-link nav__social-link--fb">
-                                                    <a href="https://www.facebook.com/captainsofrussia/" target="_blank"></a>
-                                                </div>
-                                                                    <div class="nav__social-link nav__social-link--insta">
-                                                    <a href="https://www.instagram.com/captains_russia/" target="_blank"></a>
-                                                </div>
-                                                                    <div class="nav__social-link nav__social-link--ytube">
-                                                    <a href="https://www.youtube.com/channel/UChOGNEpEsgFeMMPkIJ0FDzQ" target="_blank"></a>
-                                                </div>
-                                                            </div>
-                                    </div>
-                  
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-            <div class="main__body">
-                <div class="container">
-                    <h1 class="main__title">
-              Блог                </h1>
-                </div>
-            </div>
-    
-        </div>
-    </div>
-    
-    <section class="blog">
-      <div class="blog__wrapper">
-        <div class="blog__sorting">
-          <select class="visually-hidden">
-            <option value="Сначала новые">Сначала новые</option>
-            <option value="Сначала новые">Сначала новые</option>
-            <option value="Сначала старые">Сначала старые</option>
-          </select>
-        </div>
-        <ul class="blog__list">
-          <li class="blog__item">
-            <a class="blog__item-image-link" href="#">
-              <img class="blog__item-image" src="img/image-1.png" alt="Изображение записи">
-            </a>
-            <div class="blog__item-wrapper">
-              <p class="blog__item-date">12 июня 2020</p>
-              <h2 class="blog__item-title">
-                <a class="blog__item-title-link" href="#">Дизайн-мышление: что это и зачем мы изучаем?</a>
-              </h2>
-              <p class="blog__item-description">Главная цель дизайн-мышления - выйти за пределы существующих стереотипов и привычных способов решения задачи.</p>
-              <a class="blog__item-link button" href="#">Подробнее</a>
-            </div>
-          </li>
-          <li class="blog__item">
-            <a class="blog__item-image-link" href="#">
-              <img class="blog__item-image" src="img/image-2.png" alt="Изображение записи">
-            </a>
-            <div class="blog__item-wrapper">
-              <p class="blog__item-date">10 июня 2020</p>
-              <h2 class="blog__item-title">
-                <a class="blog__item-title-link" href="#">Стартовал модуль «Наставники»</a>
-              </h2>
-              <p class="blog__item-description">У наших студентов 1-курса 11 мая стартовал модуль «НАСТАВНИКИ»
-                Модуль проходит в онлайн-формате</p>
-              <a class="blog__item-link button" href="#">Подробнее</a>
-            </div>
-          </li>
-          <li class="blog__item">
-            <a class="blog__item-image-link" href="/post.html">
-              <img class="blog__item-image" src="img/image-3.png" alt="Изображение записи">
-            </a>
-            <div class="blog__item-wrapper">
-              <p class="blog__item-date">1 июня 2020</p>
-              <h2 class="blog__item-title">
-                <a class="blog__item-title-link" href="/post.html">Интервью с Никитой Рождественским</a>
-              </h2>
-              <p class="blog__item-description">Никита Рождественский, преподаватель по дисциплине «Инновационное предпринимательство» на Факультете бизнеса «Капитаны», делится мыслями об опыте...</p>
-              <a class="blog__item-link button" href="/post.html">Подробнее</a>
-            </div>
-          </li>
-          <li class="blog__item">
-            <a class="blog__item-image-link" href="#">
-              <img class="blog__item-image" src="img/image-1.png" alt="Изображение записи">
-            </a>
-            <div class="blog__item-wrapper">
-              <p class="blog__item-date">29 мая 2020</p>
-              <h2 class="blog__item-title">
-                <a class="blog__item-title-link" href="#">Дизайн-мышление: что это и зачем мы изучаем?</a>
-              </h2>
-              <p class="blog__item-description">Главная цель дизайн-мышления - выйти за пределы существующих стереотипов и привычных способов решения задачи.</p>
-              <a class="blog__item-link button" href="#">Подробнее</a>
-            </div>
-          </li>
-          <li class="blog__item">
-            <a class="blog__item-image-link" href="#">
-              <img class="blog__item-image" src="img/image-2.png" alt="Изображение записи">
-            </a>
-            <div class="blog__item-wrapper">
-              <p class="blog__item-date">23 мая 2020</p>
-              <h2 class="blog__item-title">
-                <a class="blog__item-title-link" href="#">Стартовал модуль «Наставники»</a>
-              </h2>
-              <p class="blog__item-description">У наших студентов 1-курса 11 мая стартовал модуль «НАСТАВНИКИ»
-                Модуль проходит в онлайн-формате</p>
-              <a class="blog__item-link button" href="#">Подробнее</a>
-            </div>
-          </li>
-          <li class="blog__item">
-            <a class="blog__item-image-link" href="#">
-              <img class="blog__item-image" src="img/image-3.png" alt="Изображение записи">
-            </a>
-            <div class="blog__item-wrapper">
-              <p class="blog__item-date">20 мая 2020</p>
-              <h2 class="blog__item-title">
-                <a class="blog__item-title-link" href="#">Интервью с Никитой Рождественским</a>
-              </h2>
-              <p class="blog__item-description">Никита Рождественский, преподаватель по дисциплине «Инновационное предпринимательство» на Факультете бизнеса «Капитаны», делится мыслями об опыте...</p>
-              <a class="blog__item-link button" href="#">Подробнее</a>
-            </div>
-          </li>
-          <li class="blog__item">
-            <a class="blog__item-image-link" href="#">
-              <img class="blog__item-image" src="img/image-1.png" alt="Изображение записи">
-            </a>
-            <div class="blog__item-wrapper">
-              <p class="blog__item-date">19 мая 2020</p>
-              <h2 class="blog__item-title">
-                <a class="blog__item-title-link" href="#">Дизайн-мышление: что это и зачем мы изучаем?</a>
-              </h2>
-              <p class="blog__item-description">Главная цель дизайн-мышления - выйти за пределы существующих стереотипов и привычных способов решения задачи.</p>
-              <a class="blog__item-link button" href="#">Подробнее</a>
-            </div>
-          </li>
-          <li class="blog__item">
-            <a class="blog__item-image-link" href="#">
-              <img class="blog__item-image" src="img/image-2.png" alt="Изображение записи">
-            </a>
-            <div class="blog__item-wrapper">
-              <p class="blog__item-date">15 мая 2020</p>
-              <h2 class="blog__item-title">
-                <a class="blog__item-title-link" href="#">Стартовал модуль «Наставники»</a>
-              </h2>
-              <p class="blog__item-description">У наших студентов 1-курса 11 мая стартовал модуль «НАСТАВНИКИ»
-                Модуль проходит в онлайн-формате</p>
-              <a class="blog__item-link button" href="#">Подробнее</a>
-            </div>
-          </li>
-          <li class="blog__item">
-            <a class="blog__item-image-link" href="#">
-              <img class="blog__item-image" src="img/image-3.png" alt="Изображение записи">
-            </a>
-            <div class="blog__item-wrapper">
-              <p class="blog__item-date">10 мая 2020</p>
-              <h2 class="blog__item-title">
-                <a class="blog__item-title-link" href="#">Интервью с Никитой Рождественским</a>
-              </h2>
-              <p class="blog__item-description">Никита Рождественский, преподаватель по дисциплине «Инновационное предпринимательство» на Факультете бизнеса «Капитаны», делится мыслями об опыте...</p>
-              <a class="blog__item-link button" href="#">Подробнее</a>
-            </div>
-          </li>
-          <li class="blog__item">
-            <a class="blog__item-image-link" href="#">
-              <img class="blog__item-image" src="img/image-1.png" alt="Изображение записи">
-            </a>
-            <div class="blog__item-wrapper">
-              <p class="blog__item-date">3 мая 2020</p>
-              <h2 class="blog__item-title">
-                <a class="blog__item-title-link" href="#">Дизайн-мышление: что это и зачем мы изучаем?</a>
-              </h2>
-              <p class="blog__item-description">Главная цель дизайн-мышления - выйти за пределы существующих стереотипов и привычных способов решения задачи.</p>
-              <a class="blog__item-link button" href="#">Подробнее</a>
-            </div>
-          </li>
-          <li class="blog__item">
-            <a class="blog__item-image-link" href="#">
-              <img class="blog__item-image" src="img/image-2.png" alt="Изображение записи">
-            </a>
-            <div class="blog__item-wrapper">
-              <p class="blog__item-date">1 мая 2020</p>
-              <h2 class="blog__item-title">
-                <a class="blog__item-title-link" href="#">Стартовал модуль «Наставники»</a>
-              </h2>
-              <p class="blog__item-description">У наших студентов 1-курса 11 мая стартовал модуль «НАСТАВНИКИ»
-                Модуль проходит в онлайн-формате</p>
-              <a class="blog__item-link button" href="#">Подробнее</a>
-            </div>
-          </li>
-          <li class="blog__item">
-            <a class="blog__item-image-link" href="#">
-              <img class="blog__item-image" src="img/image-3.png" alt="Изображение записи">
-            </a>
-            <div class="blog__item-wrapper">
-              <p class="blog__item-date">30 апреля 2020</p>
-              <h2 class="blog__item-title">
-                <a class="blog__item-title-link" href="#">Интервью с Никитой Рождественским</a>
-              </h2>
-              <p class="blog__item-description">Никита Рождественский, преподаватель по дисциплине «Инновационное предпринимательство» на Факультете бизнеса «Капитаны», делится мыслями об опыте...</p>
-              <a class="blog__item-link button" href="#">Подробнее</a>
-            </div>
-          </li>
-          <li class="blog__item">
-            <a class="blog__item-image-link" href="#">
-              <img class="blog__item-image" src="img/image-1.png" alt="Изображение записи">
-            </a>
-            <div class="blog__item-wrapper">
-              <p class="blog__item-date">26 апреля 2020</p>
-              <h2 class="blog__item-title">
-                <a class="blog__item-title-link" href="#">Дизайн-мышление: что это и зачем мы изучаем?</a>
-              </h2>
-              <p class="blog__item-description">Главная цель дизайн-мышления - выйти за пределы существующих стереотипов и привычных способов решения задачи.</p>
-              <a class="blog__item-link button" href="#">Подробнее</a>
-            </div>
-          </li>
-          <li class="blog__item">
-            <a class="blog__item-image-link" href="#">
-              <img class="blog__item-image" src="img/image-2.png" alt="Изображение записи">
-            </a>
-            <div class="blog__item-wrapper">
-              <p class="blog__item-date">20 апреля 2020</p>
-              <h2 class="blog__item-title">
-                <a class="blog__item-title-link" href="#">Стартовал модуль «Наставники»</a>
-              </h2>
-              <p class="blog__item-description">У наших студентов 1-курса 11 мая стартовал модуль «НАСТАВНИКИ»
-                Модуль проходит в онлайн-формате</p>
-              <a class="blog__item-link button" href="#">Подробнее</a>
-            </div>
-          </li>
-          <li class="blog__item">
-            <a class="blog__item-image-link" href="#">
-              <img class="blog__item-image" src="img/image-3.png" alt="Изображение записи">
-            </a>
-            <div class="blog__item-wrapper">
-              <p class="blog__item-date">14 апреля 2020</p>
-              <h2 class="blog__item-title">
-                <a class="blog__item-title-link" href="#">Интервью с Никитой Рождественским</a>
-              </h2>
-              <p class="blog__item-description">Никита Рождественский, преподаватель по дисциплине «Инновационное предпринимательство» на Факультете бизнеса «Капитаны», делится мыслями об опыте...</p>
-              <a class="blog__item-link button" href="#">Подробнее</a>
-            </div>
-          </li>
-        </ul>
-        <button class="blog__load-more-button button" type="button">Загрузить ещё</button>
-      </div>
-    </section>
-      
-    
-    <div class="footer">
-        <div class="footer__mobile mfooter">
-            <div class="container">
-    
-          
-    <div class="mfooter__slider">
-        <div class="mfooter__slider-inner">
-            <div class="slider_third">
-                          <div class="mfooter__slide">
-                        <a class="mfooter__calendar-item" href="https://xn----7sba5acai1akfpnah1l.xn--p1ai/event/671/">
-                            <div class="mfooter__calendar-date">
-                                <div class="mfooter__calendar-day">
-                    16                            </div>
-    
-                                <div class="mfooter__calendar-month">
-                    Июнь                            </div>
-    
-                                <div class="mfooter__calendar-time">
-                    17:00                            </div>
-                            </div>
-    
-                            <div class="mfooter__calendar-describe">
-                  Деловая игра &#171;Рынок и капитал&#187;                        </div>
-    
-                            <div class="mfooter__calendar-arrow">
-                            </div>
-                        </a>
-                    </div>
-                          <div class="mfooter__slide">
-                        <a class="mfooter__calendar-item" href="https://xn----7sba5acai1akfpnah1l.xn--p1ai/event/den-otkrytyh-dverej/">
-                            <div class="mfooter__calendar-date">
-                                <div class="mfooter__calendar-day">
-                    26                            </div>
-    
-                                <div class="mfooter__calendar-month">
-                    Июнь                            </div>
-    
-                                <div class="mfooter__calendar-time">
-                    12:00                            </div>
-                            </div>
-    
-                            <div class="mfooter__calendar-describe">
-                  День открытых дверей                        </div>
-    
-                            <div class="mfooter__calendar-arrow">
-                            </div>
-                        </a>
-                    </div>
-                          <div class="mfooter__slide">
-                        <a class="mfooter__calendar-item" href="https://xn----7sba5acai1akfpnah1l.xn--p1ai/event/412/">
-                            <div class="mfooter__calendar-date">
-                                <div class="mfooter__calendar-day">
-                    24-26                            </div>
-    
-                                <div class="mfooter__calendar-month">
-                    Июль                            </div>
-    
-                                <div class="mfooter__calendar-time">
-                    14:00                            </div>
-                            </div>
-    
-                            <div class="mfooter__calendar-describe">
-                  Бизнес-интенсив <br>&#171;Город. За пределом&#187;                        </div>
-    
-                            <div class="mfooter__calendar-arrow">
-                            </div>
-                        </a>
+              <div class="main__header-univer">Российский Экономический Университет <br>имени Г. В. Плеханова</div>
+              <div class="main__header-merge">
+                <div class="main__header-conts"><a class="main__header-mail" href="#"> info@kapitany-russia.ru</a><a class="main__header-phone" href="#">8 (800) 500 93 71</a></div>
+                <div class="main__header-city main__header-city--top city">
+                  <div class="city__selected">Москва</div>
+                  <div class="city__list">
+                    <div class="city__list-header">Выбрать город</div>
+                    <div class="city__list-inner">
+                      <div class="city__list-item">Волгоград</div>
+                      <div class="city__list-item">Воронеж</div>
+                      <div class="city__list-item">Краснодар</div>
+                      <div class="city__list-item city__list-item--active">Москва</div>
+                      <div class="city__list-item">Саратов</div>
+                      <div class="city__list-item">Севастополь</div>
+                      <div class="city__list-item">Ростов</div>
                     </div>
                   </div>
-        </div>
-    </div>
-    
-          
-        <div class="mfooter__head">
-            <div class="mfooter__request">
-                <div class="mfooter__button">Задать вопрос в мессенджере</div>
-                <div class="mfooter__messengers">
-                                <div class="mfooter__messenger">
-                            <a href="whatsapp://send?phone=79251644298" target="_blank">
-                  WhatsApp                        </a>
-                        </div>
-                                <div class="mfooter__messenger">
-                            <a href="tg://resolve?domain=captains_moscow" target="_blank">
-                  Telegram                        </a>
-                        </div>
-                                <div class="mfooter__messenger">
-                            <a href="https://vk.com/write-34915228" target="_blank">
-                  Вконтакте                        </a>
-                        </div>
-                        </div>
-            </div>
-        </div>
-    
-    
-                <div class="mfooter__body">
-                    <div class="mfooter__links">
-                                      <div class="mfooter__link">
-                                <a href="https://xn----7sba5acai1akfpnah1l.xn--p1ai/events/">Мероприятия</a>
-                            </div>
-                            <div class="mfooter__link">
-                                <a href="/bakalavr/">Абитуриентам</a>
-                            </div>
-                            <div class="mfooter__link">
-                                <a href="/about/">О факультете</a>
-                            </div>
-                            <div class="mfooter__link">
-                                <a href="/documents/">Документы</a>
-                            </div>
-                              </div>
-                    <div class="mfooter__conts">
-                        <a class="mfooter__phone" href="tel:8 (800) 500 93 71">
-                8 (800) 500 93 71                    </a>
-                        <a class="mfooter__mail" href="mailto:info@kapitany-russia.ru">
-                info@kapitany-russia.ru                    </a>
-                        <div class="mfooter__address">Москва, Стремянный пер., 36</div>
-                    </div>
                 </div>
+              </div>
             </div>
-    
-                    <div class="mfooter__social">
-                                <div class="mfooter__social-link mfooter__social-link--vk">
-                            <a href="https://vk.com/captains_russia" target="_blank"></a>
-                        </div>
-                                <div class="mfooter__social-link mfooter__social-link--fb">
-                            <a href="https://www.facebook.com/captainsofrussia/" target="_blank"></a>
-                        </div>
-                                <div class="mfooter__social-link mfooter__social-link--insta">
-                            <a href="https://www.instagram.com/captains_russia/" target="_blank"></a>
-                        </div>
-                                <div class="mfooter__social-link mfooter__social-link--ytube">
-                            <a href="https://www.youtube.com/channel/UChOGNEpEsgFeMMPkIJ0FDzQ" target="_blank"></a>
-                        </div>
-                        </div>
-            </div>
-    
-        <div class="footer__descktop dfooter">
-        
-        <div class="dfooter__head">
+          </div>
+          <div class="main__header-bottom">
             <div class="container">
-                <div class="dfooter__question">Задайте <br class="br">вопрос в мессенджере</div>
-                <div class="dfooter__arrow">
-                </div>
-                <div class="dfooter__messengers">
-                                <a class="dfooter__messenger" href="whatsapp://send?phone=79251644298" target="_blank">
-                WhatsApp                    </a>
-                                <a class="dfooter__messenger" href="tg://resolve?domain=captains_moscow" target="_blank">
-                Telegram                    </a>
-                                <a class="dfooter__messenger" href="https://vk.com/write-34915228" target="_blank">
-                Вконтакте                    </a>
-                        </div>
-                <a class="dfooter__recall" href="">Перезвоните мне</a>
-            </div>
-        </div>
-    
-    
-            <div class="dfooter__body">
-                <div class="container">
-                    <div class="dfooter__logo">
-                        <a class="logo" href="/">
-                            <div class="logo__text">Капитаны</div>
-                        </a>
+              <div class="main__header-logo"><a class="logo"><img class="logo__img" src="img/logo.png" alt="">
+                  <div class="logo__text">Капитаны</div></a></div>
+              <div class="main__header-menus">
+                <div class="main__header-city main__header-city--bottom city">
+                  <div class="city__selected">Москва</div>
+                  <div class="city__list">
+                    <div class="city__list-header">Выбрать город
+                      <div class="city__close"></div>
                     </div>
-    
-                    <div class="dfooter__menus">
-                                      <div class="dfooter__menu">
-                                <a class="dfooter__menu-title" href="">Абитуриенту</a>
-                                <a class="dfooter__menu-link" href="/bakalavr/">Бакалавриат</a>
-                                <a class="dfooter__menu-link" href="/magistr/">Магистратура</a>
-                                <a class="dfooter__menu-link" href="https://xn----7sba5acai1akfpnah1l.xn--p1ai/events/">
-                                    Дни открытых дверей
-                                </a>
-                                <a class="dfooter__menu-link" href="https://xn----7sba5acai1akfpnah1l.xn--p1ai/events/">Мероприятия</a>
-                            </div>
-                            <div class="dfooter__menu">
-                                <a class="dfooter__menu-title" href="/about/">О факультете</a>
-                                <a class="dfooter__menu-link" href="/about/#history">История</a>
-                                <a class="dfooter__menu-link" href="/#programm">Программа обучения</a>
-                                <a class="dfooter__menu-link" href="/about/#teachers">Преподаватели</a>
-                            </div>
-                            <div class="dfooter__menu">
-                                <a class="dfooter__menu-title" href="/documents/">Документы</a>
-                                                                <a class="dfooter__menu-link" href="https://xn----7sba5acai1akfpnah1l.xn--p1ai/wp-content/uploads/2020/04/dogovor.pdf">
-                      Договор                                </a>
-                                                  <a class="dfooter__menu-link" href="https://xn----7sba5acai1akfpnah1l.xn--p1ai/wp-content/uploads/2020/04/rekvizity_bf.pdf">
-                      Реквизиты                                </a>
-                                                  <a class="dfooter__menu-link" href="https://xn----7sba5acai1akfpnah1l.xn--p1ai/wp-content/uploads/2020/04/ustav_bf_compressed-1.pdf">
-                      Устав                                </a>
-                                          </div>
-                              </div>
-    
-                    <div class="dfooter__conts">
-                        <a class="dfooter__phone" href="tel:8 (800) 500 93 71">
-                8 (800) 500 93 71                    </a>
-                        <a class="dfooter__mail" href="mailto:info@kapitany-russia.ru">
-                info@kapitany-russia.ru                    </a>
-    
-                                      <div class="dfooter__social">
-                                                  <div class="dfooter__social-link dfooter__social-link--vk">
-                                        <a href="https://vk.com/captains_russia" target="_blank"></a>
-                                    </div>
-                                                  <div class="dfooter__social-link dfooter__social-link--fb">
-                                        <a href="https://www.facebook.com/captainsofrussia/" target="_blank"></a>
-                                    </div>
-                                                  <div class="dfooter__social-link dfooter__social-link--insta">
-                                        <a href="https://www.instagram.com/captains_russia/" target="_blank"></a>
-                                    </div>
-                                                  <div class="dfooter__social-link dfooter__social-link--ytube">
-                                        <a href="https://www.youtube.com/channel/UChOGNEpEsgFeMMPkIJ0FDzQ" target="_blank"></a>
-                                    </div>
-                                          </div>
-              
-                        <div class="dfooter__address">Москва, Стремянный пер., 36</div>
+                    <div class="city__list-inner">
+                      <div class="city__list-item">Волгоград</div>
+                      <div class="city__list-item">Воронеж</div>
+                      <div class="city__list-item">Краснодар</div>
+                      <div class="city__list-item city__list-item--active">Москва</div>
+                      <div class="city__list-item">Саратов</div>
+                      <div class="city__list-item">Севастополь</div>
+                      <div class="city__list-item">Ростов</div>
                     </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-        <div class="footer__bottom">
-            <div class="container">
-                <div class="footer__univer">
-            Российский Экономический Университет <br>имени Г. В. Плеханова            </div>
-                <div class="footer__confidential">
-                    <a href="/policy/">Политика конфиденциальности</a>
-                </div>
-                <div class="footer__copy">
-                    <div class="footer__copy-name">Дизайн и разработка –</div>
-                    <div class="footer__copy-link">
-                        <a href="http://insaim.ru/?utm_source=case&utm_medium=footer_link&utm_campaign=captains">insaim</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="video__container">
-    </div>
-    
-    <div class="consult__popup consult__popup--consult">
-      <div class="consult__popup-inner">
-        <div class="consult__pup">
-          <div class="container">
-            <div class="consult__pup__bg">
-              <div class="consult__pup__close"></div>
-              <div class="consult__pup__inner">
-                <div class="consult__pup__title consult__pup__title--main title">Получить консультацию</div>
-    
-                <form class="consult__pup__form form-rest" action="https://xn----7sba5acai1akfpnah1l.xn--p1ai/wp-json/api/email/consultation">
-                  <input type="hidden" name="target" value="header">
-                  <input type="hidden" name="goal" value="konsult">
-    
-                  <input name="fio" class="consult__pup__input consult__pup__input--name" type="text" placeholder="Ваше ФИО*" required="">
-    
-                  <input name="phone" class="consult__pup__input consult__pup__input--phone" type="tel" placeholder="Ваш телефон*" required="">
-    
-                  <input name="email" class="consult__pup__input consult__pup__input--email" type="email" placeholder="Ваш email*" required="">
-    
-                  <input name="url" class="consult__pup__input consult__pup__input--vk" type="url" placeholder="vk.com/профиль">
-    
-                  <button class="consult__pup__button button button--fill" type="submit">
-                    Отправить
-                  </button>
-    
-                  <div class="consult__pup__conditions-outer">
-                    <div class="consult__pup__conditions">
-                      <input class="consult__pup__checkbox" type="checkbox" name="checkbox" id="consult__pup__checkbox" required="">
-                      <label class="consult__pup__label" for="consult__pup__checkbox"></label>
-                      <div class="consult__pup__conditions-inner">
-                        <div class="consult__pup__conditions-text">
-                          Я согласен с условиями обработки
-                        </div>
-                        <a class="consult__pup__conditions-link" href="/policy/" target="_blank">персональных данных</a>
+                <div class="main__header-nav">
+                  <div class="main__header-toggle toggle">
+                    <div class="toggle__inner">
+                      <div class="toggle__lines">
+                        <div class="toggle__inner-white"></div>
+                        <div class="toggle__inner-yellow"></div>
                       </div>
                     </div>
                   </div>
-                </form>
-    
-                <div class="request__sucsess consult__pup__sucsess">
-                  <div class="consult__pup__title title">Ваша заявка принята!</div>
-                  <div class="request__subtitle">Мы свяжемся с Вами в ближайшее время</div>
-                  <div class="request__life">Больше о жизни факультета:</div>
-    
-                                  <div class="request__social">
-                                          <div class="request__social-link request__social-link--vk">
-                          <a href="https://vk.com/captains_russia" target="_blank"></a>
+                  <nav class="nav">
+                    <div class="nav__links">
+                      <div class="nav__links-inner"><a class="nav__link" href="#">Абитуриентам</a><a class="nav__link" href="#">О факультете</a><a class="nav__link" href="#">Мероприятия</a><a class="nav__link" href="#">Новости</a></div><a class="nav__button button" href="#">Получить консультацию</a>
+                      <div class="nav__social">
+                        <div class="nav__social-title">Следите за новостями факультета <br>в социальных сетях</div>
+                        <div class="nav__social-links">
+                          <div class="nav__social-link nav__social-link--insta"><a href="#" target="_blank"></a></div>
+                          <div class="nav__social-link nav__social-link--ytube"><a href="#" target="_blank"></a></div>
+                          <div class="nav__social-link nav__social-link--fb"><a href="#" target="_blank"></a></div>
+                          <div class="nav__social-link nav__social-link--vk"><a href="#" target="_blank"></a></div>
                         </div>
-                                          <div class="request__social-link request__social-link--fb">
-                          <a href="https://www.facebook.com/captainsofrussia/" target="_blank"></a>
-                        </div>
-                                          <div class="request__social-link request__social-link--insta">
-                          <a href="https://www.instagram.com/captains_russia/" target="_blank"></a>
-                        </div>
-                                          <div class="request__social-link request__social-link--ytube">
-                          <a href="https://www.youtube.com/channel/UChOGNEpEsgFeMMPkIJ0FDzQ" target="_blank"></a>
-                        </div>
-                                      </div>
-                              </div>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main__body">
+          <div class="container">
+            <div class="main__title">Факультет бизнеса «Капитаны»</div>
+            <div class="main__subtitle">Это получение высшего образования<br class="br"> и возможность запуска своего проекта одновременно</div><a class="main__button button button--fill main__button--index" href="">Подробнее</a>
+            <div class="main__advantages">
+              <div class="main__advantage main__advantage--first">Престижное экономическое образование <br class="br">в одном из лучших <br class="br">университетов страны    </div>
+              <div class="main__advantage main__advantage--second">Уникальные управленческие <br class="br">и бизнес- модули,  связанные <br class="br">с проектной деятельностью</div>
+              <div class="main__advantage main__advantage--third">Современный учебный <br class="br">корпус в центре Москвыы</div>
+            </div>
+          </div>
+        </div>
+        <div class="main__calendar"><a class="main__calendar-item" href="">
+            <div class="main__calendar-date">
+              <div class="main__calendar-day">15</div>
+              <div class="main__calendar-month">февраль</div>
+              <div class="main__calendar-time">12:00</div>
+            </div>
+            <div class="main__calendar-describe">26 апреля Финал<br> Акселератора института<br> им. Шифферса</div></a><a class="main__calendar-item" href="">
+            <div class="main__calendar-date">
+              <div class="main__calendar-day">28</div>
+              <div class="main__calendar-month">февраль</div>
+              <div class="main__calendar-time">12:00</div>
+            </div>
+            <div class="main__calendar-describe">На чем мечтают делать деньги<br> современные школьники<br> (1 часть)</div></a><a class="main__calendar-item" href="">
+            <div class="main__calendar-date">
+              <div class="main__calendar-day">04</div>
+              <div class="main__calendar-month">март</div>
+              <div class="main__calendar-time">12:00</div>
+            </div>
+            <div class="main__calendar-describe">Online-вебинар для<br> поступающих в магистратуру<br> в 2019 учебном году.</div></a><a class="main__calendar-arrow" href="#"></a></div>
+      </div>
+    </div>
+    <div class="group-block">
+      <div class="about">
+        <div class="container">
+          <div class="about__inner">
+            <div class="about__title title">О капитанах <br class="about__br">за 5 минут</div>
+            <div class="about__video">
+              <div class="about__video-inner"><img class="about__video-preview" src="img/about/video-preview.jpg" alt="">
+                <div class="popup__video about__popup">
+                  <div class="about__video-player">
+                    <video width="640" height="360" src="https://www.youtube.com/embed/9knYNjp95bs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div><div class="question">
-        <div class="question__inner">
-            <div class="question__title">
-                Ваш город<br> Москва?
+      <div class="programm">
+        <div class="container">
+          <div class="programm__inner">
+            <div class="programm__header">
+              <h2 class="programm__title title">Программа обучения</h2>
+              <div class="programm__term">4 года обучения</div>
+              <div class="programm__cost">от 340 000 руб</div><a class="programm__button button button--fill" href="#">Как поступить</a>
             </div>
-            <div class="question__buttons">
-                <div class="question__button question__button--yes">Да</div>
-                <div class="question__button question__button--no">Нет</div>
+            <div class="programm__body">
+              <div class="programm__nav">
+                <ul>
+                        <li class="programm__nav-li programm__nav-li--active"><a class="programm__nav-link programm__nav-link--active" href="#features">Особенности</a></li>
+                        <li class="programm__nav-li"><a class="programm__nav-link" href="#direction">Направления</a></li>
+                        <li class="programm__nav-li"><a class="programm__nav-link" href="#bModules">Бизнес-модули</a></li>
+                        <li class="programm__nav-li"><a class="programm__nav-link" href="#teachers">Преподаватели</a></li>
+                        <li class="programm__nav-li"><a class="programm__nav-link" href="#placement">Трудоустройство</a></li>
+                </ul>
+              </div>
+              <div class="programm__description">
+                <div class="programm__description-inner programm__description-inner--active" id="features">
+                  <div class="programm__features">
+                    <div class="programm__features-title">Особенности</div>
+                    <div class="programm__feature">На факультете бизнеса "Капитаны" студент получает 50% теории и 50% практики, начиная с первого курса. Занятия ведут ведущие профессоры университета, а также действующие предприниматели и сотрудники крупных компаний.</div>
+                    <div class="programm__feature">Вместе с теоретическим обучением студент проходит различные управленческие и бизнес модули, что позволяет ему быстрее адаптироваться к рынку и успешнее трудоустраиваться, имея необходимые навыки.</div>
+                    <div class="programm__feature">Активная и насыщенная студенческая жизнь, крепкое и сплоченное сообщество, а также большое количество дополнительной деятельности ждет студента уже с первого года обучения.</div>
+                  </div>
+                </div>
+                <div class="programm__description-inner" id="direction">
+                  <div class="programm__directions">
+                    <div class="programm__direction-img"><img src="./img/program/diplom.png" alt=""></div>
+                    <div class="programm__direction-inner">
+                      <div class="programm__direction">
+                        <div class="programm__direction-title">Государственное <br> и муниципальное управление</div>
+                        <div class="programm__direction-desc">Областью профессиональной деятельности выпускников является управление на федеральном, региональном и муниципальных уровнях власти, а также в крупных корпоративных коммерческих структурах, в том числе c государственным участием.</div>
+                      </div>
+                      <div class="programm__direction">
+                        <div class="programm__direction-title">Менеджмент в инновационном <br> и социальном предпринимательстве</div>
+                        <div class="programm__direction-desc">В основе программы подготовки лежит учебно-прикладная и практическая работа по проектированию и внедрению собственного бизнес-проекта в инновационной сфере.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="programm__description-inner" id="bModules">
+                  <div class="programm__modules">
+                    <div class="programm__module-items">
+                            <div class="programm__module-item">
+                              <div class="programm__module-icon programm__module-icon--1"></div>
+                              <div class="programm__module-name">Проектная академия</div>
+                            </div>
+                            <div class="programm__module-item">
+                              <div class="programm__module-icon programm__module-icon--2"></div>
+                              <div class="programm__module-name">Исследовательский модуль</div>
+                            </div>
+                            <div class="programm__module-item">
+                              <div class="programm__module-icon programm__module-icon--3"></div>
+                              <div class="programm__module-name">Наставник</div>
+                            </div>
+                            <div class="programm__module-item">
+                              <div class="programm__module-icon programm__module-icon--7"></div>
+                              <div class="programm__module-name">Социотехника</div>
+                            </div>
+                            <div class="programm__module-item">
+                              <div class="programm__module-icon programm__module-icon--4"></div>
+                              <div class="programm__module-name">Стартап</div>
+                            </div>
+                            <div class="programm__module-item">
+                              <div class="programm__module-icon programm__module-icon--5"></div>
+                              <div class="programm__module-name">Дизайн мышление</div>
+                            </div>
+                            <div class="programm__module-item">
+                              <div class="programm__module-icon programm__module-icon--6"></div>
+                              <div class="programm__module-name">Цифра</div>
+                            </div>
+                            <div class="programm__module-item">
+                              <div class="programm__module-icon programm__module-icon--8"></div>
+                              <div class="programm__module-name">Лаборатория бренда</div>
+                            </div>
+                      <div class="programm__module-item">
+                        <div class="business__more-count">+15</div>
+                        <div class="business__more-title">модулей</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="programm__description-inner" id="teachers">
+                  <div class="programm__teachers">
+                    <div class="programm__teachers-inner">
+                            <div class="programm__teacher">
+                              <div class="programm__teacher-photo"><img src="./img/program/teacher_1.png" alt=""></div>
+                              <div class="programm__teacher-info">
+                                <div class="programm__teacher-name">Никита Рождественский</div>
+                                <div class="programm__teacher-rank">Преподаватель, трекер</div>
+                                <div class="programm__teacher-position">Управленческая экономика</div>
+                              </div>
+                            </div>
+                            <div class="programm__teacher">
+                              <div class="programm__teacher-photo"><img src="./img/program/teacher_2.png" alt=""></div>
+                              <div class="programm__teacher-info">
+                                <div class="programm__teacher-name">Николай Мрочковский</div>
+                                <div class="programm__teacher-rank">Кандидат экономических наук</div>
+                                <div class="programm__teacher-position">Предприниматель, инвестор, бизнес-консультант</div>
+                              </div>
+                            </div>
+                            <div class="programm__teacher">
+                              <div class="programm__teacher-photo"><img src="./img/program/teacher_3.png" alt=""></div>
+                              <div class="programm__teacher-info">
+                                <div class="programm__teacher-name">Андрей Григорьев</div>
+                                <div class="programm__teacher-rank">Преподаватель, трекер</div>
+                                <div class="programm__teacher-position">Управленческая экономика</div>
+                              </div>
+                            </div>
+                            <div class="programm__teacher">
+                              <div class="programm__teacher-photo"><img src="./img/program/teacher_4.png" alt=""></div>
+                              <div class="programm__teacher-info">
+                                <div class="programm__teacher-name">​Андрей Григорьев</div>
+                                <div class="programm__teacher-rank">Преподаватель, кандидат психологических наук</div>
+                                <div class="programm__teacher-position">Психология,  корпоративный менеджмент</div>
+                              </div>
+                            </div>
+                    </div>
+                  </div>
+                  <div class="programm__teachers-button button">Смотреть всех</div>
+                </div>
+                <div class="programm__description-inner" id="placement">
+                  <div class="programm__placement">
+                    <div class="programm__placement-item">
+                      <div class="programm__placement-top">
+                        <div class="programm__placement-title">Менеджер <br>проектов</div>
+                        <div class="programm__placement-cost">от 90 000</div>
+                      </div>
+                      <div class="programm__placement-bottom">
+                        <div class="programm__placement-plc">Трудоустройство:</div>
+                        <div class="programm__placement-icons"><img class="programm__placement-icon" src="./img/program/placement/1.png" alt=""><img class="programm__placement-icon" src="./img/program/placement/2.png" alt=""><img class="programm__placement-icon" src="./img/program/placement/3.png" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="programm__placement-item">
+                      <div class="programm__placement-top">
+                        <div class="programm__placement-title">Руководитель <br>отдела</div>
+                        <div class="programm__placement-cost">от 100 000</div>
+                      </div>
+                      <div class="programm__placement-bottom">
+                        <div class="programm__placement-plc">Трудоустройство:</div>
+                        <div class="programm__placement-icons"><img class="programm__placement-icon" src="./img/program/placement/4.png" alt=""><img class="programm__placement-icon" src="./img/program/placement/5.png" alt=""><img class="programm__placement-icon" src="./img/program/placement/6.png" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="programm__placement-item">
+                      <div class="programm__placement-top">
+                        <div class="programm__placement-title">Ведущий специалист <br>продвижения</div>
+                        <div class="programm__placement-cost">от 100 000</div>
+                      </div>
+                      <div class="programm__placement-bottom">
+                        <div class="programm__placement-plc">Трудоустройство:</div>
+                        <div class="programm__placement-icons"><img class="programm__placement-icon" src="./img/program/placement/7.png" alt=""><img class="programm__placement-icon" src="./img/program/placement/8.png" alt=""><img class="programm__placement-icon" src="./img/program/placement/9.png" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="programm__placement-item">
+                      <div class="programm__placement-top">
+                        <div class="programm__placement-title">Директор <br>развития</div>
+                        <div class="programm__placement-cost">от 140 000</div>
+                      </div>
+                      <div class="programm__placement-bottom">
+                        <div class="programm__placement-plc">Трудоустройство:</div>
+                        <div class="programm__placement-icons"><img class="programm__placement-icon" src="./img/program/placement/10.png" alt=""><img class="programm__placement-icon" src="./img/program/placement/11.png" alt=""><img class="programm__placement-icon" src="./img/program/placement/12.png" alt=""></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+    </div>
+    <div class="life">
+      <div class="life__popup-container">
+        <div class="popup__video life__popup life_first">
+          <div class="life__video-player">Слайд первый
+            <div class="popup__video--close"></div>
+            <video width="640" height="360" src="https://www.youtube.com/embed/9knYNjp95bs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video>
+          </div>
+        </div>
+        <div class="popup__video life__popup life_second">
+          <div class="life__video-player">слайд второй
+            <div class="popup__video--close"></div>
+            <video width="640" height="360" src="https://www.youtube.com/embed/9knYNjp95bs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="life__inner">
+          <div class="life__header">
+            <div class="life__title title">Активная студенческая жизнь</div>
+            <div class="arrows arrows--descktop">
+              <div class="prev prev-frst"></div>
+              <div class="numSlides numSlides--first"></div>
+              <div class="next next-frst"></div>
+            </div>
+          </div>
+          <div class="life__slider">
+            <div class="life__slider-inner">
+              <div class="slider_first">                
+                <div class="slide">
+                  <div class="slide__inner">
+                    <div class="slide__preview">
+                      <div class="slide__img life__slide-img" id="life_first"><img src="img/life/preview.jpg" alt=""></div>
+                    </div>
+                    <div class="slide__info">
+                      <div class="slide__text">
+                        <div class="slide__text-title">Бизнес-интенсив “Город”</div>
+                        <div class="slide__text-desc">Выездной интенсив на несколько дней, в которые ребята учатся разрабатывать свои бизнес-проекты, работать в командах, также у абитуриента есть возможность проникнуться атмосферой факультета и почувствовать настоящую жизнь Капитана.</div>
+                        <div class="slide__lnk"><a href="#">Подробнее</a></div>
+                      </div>
+                      <div class="slide__comment"><a class="slide__comment-img" href=""><img src="img/life/avatar.jpg" alt=""></a>
+                        <div class="slide__comment-inner">
+                          <div class="slide__comment-name">Сергей Кузьмин</div>
+                          <div class="slide__comment-text">Было круто, был на городе! Спасибо организаторам за мероприятие </div>
+                        </div>
+                      </div>
+                    </div><a class="slide__button button" href="">Подробнее</a>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="slide__inner">
+                    <div class="slide__preview">
+                      <div class="slide__img life__slide-img" id="life_second"><img src="img/life/preview.jpg" alt=""></div>
+                    </div>
+                    <div class="slide__info">
+                      <div class="slide__text">
+                        <div class="slide__text-title">Бизнес-интенсив “Город”</div>
+                        <div class="slide__text-desc">Выездной интенсив на несколько дней, в которые ребята учатся разрабатывать свои бизнес-проекты, работать в командах, также у абитуриента есть возможность проникнуться атмосферой факультета и почувствовать настоящую жизнь Капитана.</div>
+                        <div class="slide__lnk"><a href="#">Подробнее</a></div>
+                      </div>
+                      <div class="slide__comment"><a class="slide__comment-img" href=""><img src="img/life/avatar.jpg" alt=""></a>
+                        <div class="slide__comment-inner">
+                          <div class="slide__comment-name">Сергей Кузьмин</div>
+                          <div class="slide__comment-text">Было круто, был на городе! Спасибо организаторам за мероприятие </div>
+                        </div>
+                      </div>
+                    </div><a class="slide__button button" href="">Подробнее</a>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="slide__inner">
+                    <div class="slide__preview">
+                      <div class="slide__img life__slide-img" id="life_second"><img src="img/life/preview.jpg" alt=""></div>
+                    </div>
+                    <div class="slide__info">
+                      <div class="slide__text">
+                        <div class="slide__text-title">Бизнес-интенсив “Город”</div>
+                        <div class="slide__text-desc">Выездной интенсив на несколько дней, в которые ребята учатся разрабатывать свои бизнес-проекты, работать в командах, также у абитуриента есть возможность проникнуться атмосферой факультета и почувствовать настоящую жизнь Капитана.</div>
+                        <div class="slide__lnk"><a href="#">Подробнее</a></div>
+                      </div>
+                      <div class="slide__comment"><a class="slide__comment-img" href=""><img src="img/life/avatar.jpg" alt=""></a>
+                        <div class="slide__comment-inner">
+                          <div class="slide__comment-name">Сергей Кузьмин</div>
+                          <div class="slide__comment-text">Было круто, был на городе! Спасибо организаторам за мероприятие </div>
+                        </div>
+                      </div>
+                    </div><a class="slide__button button" href="">Подробнее</a>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="slide__inner">
+                    <div class="slide__preview">
+                      <div class="slide__img life__slide-img" id="life_second"><img src="img/life/preview.jpg" alt=""></div>
+                    </div>
+                    <div class="slide__info">
+                      <div class="slide__text">
+                        <div class="slide__text-title">Бизнес-интенсив “Город”</div>
+                        <div class="slide__text-desc">Выездной интенсив на несколько дней, в которые ребята учатся разрабатывать свои бизнес-проекты, работать в командах, также у абитуриента есть возможность проникнуться атмосферой факультета и почувствовать настоящую жизнь Капитана.</div>
+                        <div class="slide__lnk"><a href="#">Подробнее</a></div>
+                      </div>
+                      <div class="slide__comment"><a class="slide__comment-img" href=""><img src="img/life/avatar.jpg" alt=""></a>
+                        <div class="slide__comment-inner">
+                          <div class="slide__comment-name">Сергей Кузьмин</div>
+                          <div class="slide__comment-text">Было круто, был на городе! Спасибо организаторам за мероприятие </div>
+                        </div>
+                      </div>
+                    </div><a class="slide__button button" href="">Подробнее</a>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="slide__inner">
+                    <div class="slide__preview">
+                      <div class="slide__img life__slide-img" id="life_second"><img src="img/life/preview.jpg" alt=""></div>
+                    </div>
+                    <div class="slide__info">
+                      <div class="slide__text">
+                        <div class="slide__text-title">Бизнес-интенсив “Город”</div>
+                        <div class="slide__text-desc">Выездной интенсив на несколько дней, в которые ребята учатся разрабатывать свои бизнес-проекты, работать в командах, также у абитуриента есть возможность проникнуться атмосферой факультета и почувствовать настоящую жизнь Капитана.</div>
+                        <div class="slide__lnk"><a href="#">Подробнее</a></div>
+                      </div>
+                      <div class="slide__comment"><a class="slide__comment-img" href=""><img src="img/life/avatar.jpg" alt=""></a>
+                        <div class="slide__comment-inner">
+                          <div class="slide__comment-name">Сергей Кузьмин</div>
+                          <div class="slide__comment-text">Было круто, был на городе! Спасибо организаторам за мероприятие </div>
+                        </div>
+                      </div>
+                    </div><a class="slide__button button" href="">Подробнее</a>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="slide__inner">
+                    <div class="slide__preview">
+                      <div class="slide__img life__slide-img" id="life_second"><img src="img/life/preview.jpg" alt=""></div>
+                    </div>
+                    <div class="slide__info">
+                      <div class="slide__text">
+                        <div class="slide__text-title">Бизнес-интенсив “Город”</div>
+                        <div class="slide__text-desc">Выездной интенсив на несколько дней, в которые ребята учатся разрабатывать свои бизнес-проекты, работать в командах, также у абитуриента есть возможность проникнуться атмосферой факультета и почувствовать настоящую жизнь Капитана.</div>
+                        <div class="slide__lnk"><a href="#">Подробнее</a></div>
+                      </div>
+                      <div class="slide__comment"><a class="slide__comment-img" href=""><img src="img/life/avatar.jpg" alt=""></a>
+                        <div class="slide__comment-inner">
+                          <div class="slide__comment-name">Сергей Кузьмин</div>
+                          <div class="slide__comment-text">Было круто, был на городе! Спасибо организаторам за мероприятие </div>
+                        </div>
+                      </div>
+                    </div><a class="slide__button button" href="">Подробнее</a>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="slide__inner">
+                    <div class="slide__preview">
+                      <div class="slide__img life__slide-img" id="life_second"><img src="img/life/preview.jpg" alt=""></div>
+                    </div>
+                    <div class="slide__info">
+                      <div class="slide__text">
+                        <div class="slide__text-title">Бизнес-интенсив “Город”</div>
+                        <div class="slide__text-desc">Выездной интенсив на несколько дней, в которые ребята учатся разрабатывать свои бизнес-проекты, работать в командах, также у абитуриента есть возможность проникнуться атмосферой факультета и почувствовать настоящую жизнь Капитана.</div>
+                        <div class="slide__lnk"><a href="#">Подробнее</a></div>
+                      </div>
+                      <div class="slide__comment"><a class="slide__comment-img" href=""><img src="img/life/avatar.jpg" alt=""></a>
+                        <div class="slide__comment-inner">
+                          <div class="slide__comment-name">Сергей Кузьмин</div>
+                          <div class="slide__comment-text">Было круто, был на городе! Спасибо организаторам за мероприятие </div>
+                        </div>
+                      </div>
+                    </div><a class="slide__button button" href="">Подробнее</a>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="slide__inner">
+                    <div class="slide__preview">
+                      <div class="slide__img life__slide-img" id="life_second"><img src="img/life/preview.jpg" alt=""></div>
+                    </div>
+                    <div class="slide__info">
+                      <div class="slide__text">
+                        <div class="slide__text-title">Бизнес-интенсив “Город”</div>
+                        <div class="slide__text-desc">Выездной интенсив на несколько дней, в которые ребята учатся разрабатывать свои бизнес-проекты, работать в командах, также у абитуриента есть возможность проникнуться атмосферой факультета и почувствовать настоящую жизнь Капитана.</div>
+                        <div class="slide__lnk"><a href="#">Подробнее</a></div>
+                      </div>
+                      <div class="slide__comment"><a class="slide__comment-img" href=""><img src="img/life/avatar.jpg" alt=""></a>
+                        <div class="slide__comment-inner">
+                          <div class="slide__comment-name">Сергей Кузьмин</div>
+                          <div class="slide__comment-text">Было круто, был на городе! Спасибо организаторам за мероприятие </div>
+                        </div>
+                      </div>
+                    </div><a class="slide__button button" href="">Подробнее</a>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="slide__inner">
+                    <div class="slide__preview">
+                      <div class="slide__img life__slide-img" id="life_second"><img src="img/life/preview.jpg" alt=""></div>
+                    </div>
+                    <div class="slide__info">
+                      <div class="slide__text">
+                        <div class="slide__text-title">Бизнес-интенсив “Город”</div>
+                        <div class="slide__text-desc">Выездной интенсив на несколько дней, в которые ребята учатся разрабатывать свои бизнес-проекты, работать в командах, также у абитуриента есть возможность проникнуться атмосферой факультета и почувствовать настоящую жизнь Капитана.</div>
+                        <div class="slide__lnk"><a href="#">Подробнее</a></div>
+                      </div>
+                      <div class="slide__comment"><a class="slide__comment-img" href=""><img src="img/life/avatar.jpg" alt=""></a>
+                        <div class="slide__comment-inner">
+                          <div class="slide__comment-name">Сергей Кузьмин</div>
+                          <div class="slide__comment-text">Было круто, был на городе! Спасибо организаторам за мероприятие </div>
+                        </div>
+                      </div>
+                    </div><a class="slide__button button" href="">Подробнее</a>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="slide__inner">
+                    <div class="slide__preview">
+                      <div class="slide__img life__slide-img" id="life_second"><img src="img/life/preview.jpg" alt=""></div>
+                    </div>
+                    <div class="slide__info">
+                      <div class="slide__text">
+                        <div class="slide__text-title">Бизнес-интенсив “Город”</div>
+                        <div class="slide__text-desc">Выездной интенсив на несколько дней, в которые ребята учатся разрабатывать свои бизнес-проекты, работать в командах, также у абитуриента есть возможность проникнуться атмосферой факультета и почувствовать настоящую жизнь Капитана.</div>
+                        <div class="slide__lnk"><a href="#">Подробнее</a></div>
+                      </div>
+                      <div class="slide__comment"><a class="slide__comment-img" href=""><img src="img/life/avatar.jpg" alt=""></a>
+                        <div class="slide__comment-inner">
+                          <div class="slide__comment-name">Сергей Кузьмин</div>
+                          <div class="slide__comment-text">Было круто, был на городе! Спасибо организаторам за мероприятие </div>
+                        </div>
+                      </div>
+                    </div><a class="slide__button button" href="">Подробнее</a>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="slide__inner">
+                    <div class="slide__preview">
+                      <div class="slide__img life__slide-img" id="life_second"><img src="img/life/preview.jpg" alt=""></div>
+                    </div>
+                    <div class="slide__info">
+                      <div class="slide__text">
+                        <div class="slide__text-title">Бизнес-интенсив “Город”</div>
+                        <div class="slide__text-desc">Выездной интенсив на несколько дней, в которые ребята учатся разрабатывать свои бизнес-проекты, работать в командах, также у абитуриента есть возможность проникнуться атмосферой факультета и почувствовать настоящую жизнь Капитана.</div>
+                        <div class="slide__lnk"><a href="#">Подробнее</a></div>
+                      </div>
+                      <div class="slide__comment"><a class="slide__comment-img" href=""><img src="img/life/avatar.jpg" alt=""></a>
+                        <div class="slide__comment-inner">
+                          <div class="slide__comment-name">Сергей Кузьмин</div>
+                          <div class="slide__comment-text">Было круто, был на городе! Спасибо организаторам за мероприятие </div>
+                        </div>
+                      </div>
+                    </div><a class="slide__button button" href="">Подробнее</a>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="slide__inner">
+                    <div class="slide__preview">
+                      <div class="slide__img life__slide-img" id="life_second"><img src="img/life/preview.jpg" alt=""></div>
+                    </div>
+                    <div class="slide__info">
+                      <div class="slide__text">
+                        <div class="slide__text-title">Бизнес-интенсив “Город”</div>
+                        <div class="slide__text-desc">Выездной интенсив на несколько дней, в которые ребята учатся разрабатывать свои бизнес-проекты, работать в командах, также у абитуриента есть возможность проникнуться атмосферой факультета и почувствовать настоящую жизнь Капитана.</div>
+                        <div class="slide__lnk"><a href="#">Подробнее</a></div>
+                      </div>
+                      <div class="slide__comment"><a class="slide__comment-img" href=""><img src="img/life/avatar.jpg" alt=""></a>
+                        <div class="slide__comment-inner">
+                          <div class="slide__comment-name">Сергей Кузьмин</div>
+                          <div class="slide__comment-text">Было круто, был на городе! Спасибо организаторам за мероприятие </div>
+                        </div>
+                      </div>
+                    </div><a class="slide__button button" href="">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="life__slider-sidebg"></div>
+            <div class="arrows arrows--mob">
+              <div class="prev prev-frst"></div>
+              <div class="numSlides numSlides--first"></div>
+              <div class="next next-frst"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grant">
+      <div class="container">
+        <div class="grant__inner">
+          <div class="grant__title title">Получи <br class="br">образование с грантом <br class="br">до 120  000 рублей</div>
+          <form class="grant__form">
+            <input class="grant__input" type="text" placeholder="Ваше имя*">
+            <input class="grant__input" type="text" placeholder="Ваш телефон*">
+            <input class="grant__input" type="text" placeholder="vk.com/">
+            <button class="grant__button button button--fill" type="submit">Отправить</button>
+            <div class="grant__conditions">
+              <input class="grant__checkbox" type="checkbox" name="checkbox" id="grant__checkbox">
+              <label class="grant__label" for="grant__checkbox"></label>
+              <div class="grant__conditions-inner">
+                <div class="grant__conditions-text">Я согласен с условиями обработки </div><a class="grant__conditions-link" href="">персональных  данных</a>
+              </div>
+            </div>
+          </form>
+          <div class="grant__sucsess">
+            <div class="grant__subtitle">Мы свяжемся с Вами в ближайшее время</div>
+            <div class="grant__life">Больше о жизни факультета:</div>
+            <div class="grant__social">
+              <div class="grant__social-link grant__social-link--insta"><a href="#" target="_blank"></a></div>
+              <div class="grant__social-link grant__social-link--ytube"><a href="#" target="_blank"></a></div>
+              <div class="grant__social-link grant__social-link--fb"><a href="#" target="_blank"></a></div>
+              <div class="grant__social-link grant__social-link--vk"><a href="#" target="_blank"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sucsess">
+      <div class="sucsess_popup-container">
+        <div class="popup__video sucsess__popup sucsess__first">
+          <div class="sucsess__video-player">Слайд первый
+            <div class="popup__video--close"></div>
+            <video width="640" height="360" src="https://www.youtube.com/embed/9knYNjp95bs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video>
+          </div>
+        </div>
+        <div class="popup__video sucsess__popup sucsess__second">
+          <div class="sucsess__video-player">слайд второй
+            <div class="popup__video--close"></div>
+            <video width="640" height="360" src="https://www.youtube.com/embed/9knYNjp95bs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video>
+          </div>
+        </div>
+        <div class="popup__video sucsess__popup sucsess__third">
+          <div class="sucsess__video-player">слайд третий
+            <div class="popup__video--close"></div>
+            <video width="640" height="360" src="https://www.youtube.com/embed/9knYNjp95bs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video>
+          </div>
+        </div>
+        <div class="popup__video sucsess__popup sucsess__fourd">
+          <div class="sucsess__video-player">слайд четвертый
+            <div class="popup__video--close"></div>
+            <video width="640" height="360" src="https://www.youtube.com/embed/9knYNjp95bs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="sucsess__inner">
+          <div class="sucsess__title title">История успеха <br class="br">студентов</div>
+          <div class="sucsess__slider">
+            <div class="sucsess__slider-inner">
+              <div class="slider_second">
+                <div class="slide">
+                  <div class="slide__inner">
+                    <div class="slide__preview">
+                      <div class="slide__img sucsess__slide__img" id="sucsess__first"><img src="img/sucsess/uley.jpg" alt=""></div>
+                    </div>
+                    <div class="slide__info slide__info-second">
+                      <div class="slide__text"><a class="slide__text-title" href="">Антикафе "Улей" </a>
+                        <div class="slide__text-desc">Управляющая компания в сфере такси, принимает автомобили у собственников и организует сдачу в аренду водителям для работы в такси.                    </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="slide__inner">
+                    <div class="slide__preview">
+                      <div class="slide__img sucsess__slide__img" id="sucsess__second"><img src="img/sucsess/uley.jpg" alt=""></div>
+                    </div>
+                    <div class="slide__info slide__info-second">
+                      <div class="slide__text"><a class="slide__text-title" href="">Антикафе "Улей" </a>
+                        <div class="slide__text-desc">Управляющая компания в сфере такси, принимает автомобили у собственников и организует сдачу в аренду водителям для работы в такси.                   </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="slide__inner">
+                    <div class="slide__preview">
+                      <div class="slide__img sucsess__slide__img" id="sucsess__third"><img src="img/sucsess/uley.jpg" alt=""></div>
+                    </div>
+                    <div class="slide__info slide__info-second">
+                      <div class="slide__text"><a class="slide__text-title" href="">Антикафе "Улей" </a>
+                        <div class="slide__text-desc">Управляющая компания в сфере такси, принимает автомобили у собственников и организует сдачу в аренду водителям для работы в такси.                    </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="slide__inner">
+                    <div class="slide__preview">
+                      <div class="slide__img sucsess__slide__img" id="sucsess__fourd"><img src="img/sucsess/uley.jpg" alt=""></div>
+                    </div>
+                    <div class="slide__info slide__info-second">
+                      <div class="slide__text"><a class="slide__text-title" href="">Антикафе "Улей" </a>
+                        <div class="slide__text-desc">Управляющая компания в сфере такси, принимает автомобили у собственников и организует сдачу в аренду водителям для работы в такси.                    </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="arrows">
+                <div class="prev prev-sec"></div>
+                <div class="numSlides numSlides--second">1/10</div>
+                <div class="next next-sec"></div>
+              </div>
+            </div>
+          </div>
+          <div class="sucsess__sidebg"></div>
+        </div>
+      </div>
+    </div>
+    <div class="reviews">
+      <div class="reviews__popup-container">
+        <div class="popup__video reviews__popup reviews__first">
+          <div class="reviews__video-player">Отзыв первый
+            <div class="popup__video--close"></div>
+            <video width="640" height="360" src="https://www.youtube.com/embed/9knYNjp95bs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video>
+          </div>
+        </div>
+        <div class="popup__video reviews__popup reviews__second">
+          <div class="reviews__video-player">отзыв второй
+            <div class="popup__video--close"></div>
+            <video width="640" height="360" src="https://www.youtube.com/embed/9knYNjp95bs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video>
+          </div>
+        </div>
+        <div class="popup__video reviews__popup reviews__third">
+          <div class="reviews__video-player">Отзыв третий
+            <div class="popup__video--close"></div>
+            <video width="640" height="360" src="https://www.youtube.com/embed/9knYNjp95bs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video>
+          </div>
+        </div>
+        <div class="popup__video reviews__popup reviews__fourd">
+          <div class="reviews__video-player">отзыв четвертый
+            <div class="popup__video--close"></div>
+            <video width="640" height="360" src="https://www.youtube.com/embed/9knYNjp95bs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="reviews__inner">
+          <div class="reviews__title title">Отзывы</div>
+          <div class="reviews__items">
+                <div class="reviews__item" id="reviews__first"><img class="reviews__item-img" src="img/reviews/1.jpg" alt="">
+                  <div class="reviews__item-inner">
+                    <div class="reviews__item-info">
+                      <div class="reviews__item-title">Отзывы родителей</div>
+                      <div class="reviews__item-text">
+                        Я считаю, что понять свои способности и <br class="br">осознать свой потенциал может только <br class="br">человек, который взялся за дело
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews__item" id="reviews__second"><img class="reviews__item-img" src="img/reviews/2.jpg" alt="">
+                  <div class="reviews__item-inner">
+                    <div class="reviews__item-info">
+                      <div class="reviews__item-title">Отзывы родителей</div>
+                      <div class="reviews__item-text">
+                        Я считаю, что понять свои способности и <br class="br">осознать свой потенциал может только <br class="br">человек, который взялся за дело
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews__item" id="reviews__third"><img class="reviews__item-img" src="img/reviews/3.jpg" alt="">
+                  <div class="reviews__item-inner">
+                    <div class="reviews__item-info">
+                      <div class="reviews__item-title">Отзывы родителей</div>
+                      <div class="reviews__item-text">
+                        Я считаю, что понять свои способности и <br class="br">осознать свой потенциал может только <br class="br">человек, который взялся за дело
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews__item" id="reviews__fourd"><img class="reviews__item-img" src="img/reviews/4.jpg" alt="">
+                  <div class="reviews__item-inner">
+                    <div class="reviews__item-info">
+                      <div class="reviews__item-title">Отзывы родителей</div>
+                      <div class="reviews__item-text">
+                        Я считаю, что понять свои способности и <br class="br">осознать свой потенциал может только <br class="br">человек, который взялся за дело
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="container">
+        <div class="faq__inner">
+          <div class="faq__title title">Как к нам поступить?</div>
+          <div class="faq__items">
+            <div class="faq__item faq__item--1">
+              <div class="faq__item-title">Вы оставляете заявку</div>
+            </div>
+            <div class="faq__arrow"></div>
+            <div class="faq__item faq__item--2">
+              <div class="faq__item-inner"> 
+                <div class="faq__item-title">Проходите собеседование</div>
+                <div class="faq__item-note">(желательно иметь портфолио)</div>
+              </div>
+            </div>
+            <div class="faq__arrow"></div>
+            <div class="faq__item faq__item--3">
+              <div class="faq__item-title">Успешно сдаете ЕГЭ</div>
+            </div>
+            <div class="faq__arrow"></div>
+            <div class="faq__item faq__item--4">
+              <div class="faq__item-title">Подаете документы в <br class="br">РЭУ им Г.В. Плеханова</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="request">
+      <div class="container">
+        <div class="request__bg">
+          <div class="request__inner">
+            <div class="request__title title">Оставьте заявку <br class="br">на бесплатную <br class="br">консультацию</div>
+            <form class="request__form" action="">
+              <input class="request__input request__input--name" type="text" placeholder="Ваше имя*">
+              <input class="request__input request__input--phone" type="text" placeholder="Ваш телефон*">
+              <input class="request__input request__input--vk" type="text" placeholder="vk.com/профиль">
+              <button class="request__button button button--fill" type="submit">Отправить</button>
+              <div class="request__conditions-outer">
+                <div class="request__conditions">
+                  <input class="request__checkbox" type="checkbox" name="checkbox" id="request__checkbox">
+                  <label class="request__label" for="request__checkbox"></label>
+                  <div class="request__conditions-inner">
+                    <div class="request__conditions-text">Я согласен с условиями обработки </div><a class="request__conditions-link" href="">персональных  данных</a>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="request__sucsess">
+              <div class="request__subtitle">Мы свяжемся с Вами в ближайшее время</div>
+              <div class="request__life">Больше о жизни факультета:</div>
+              <div class="request__social">
+                <div class="request__social-link request__social-link--insta"><a href="#" target="_blank"></a></div>
+                <div class="request__social-link request__social-link--ytube"><a href="#" target="_blank"></a></div>
+                <div class="request__social-link request__social-link--fb"><a href="#" target="_blank"></a></div>
+                <div class="request__social-link request__social-link--vk"><a href="#" target="_blank"></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__mobile mfooter">
+        <div class="container">
+          <div class="mfooter__slider">
+            <div class="mfooter__slider-inner">
+              <div class="slider_third">
+                <div class="mfooter__slide"><a class="mfooter__calendar-item" href="">
+                    <div class="mfooter__calendar-date">
+                      <div class="mfooter__calendar-day">15</div>
+                      <div class="mfooter__calendar-month">февраль</div>
+                      <div class="mfooter__calendar-time">12:00</div>
+                    </div>
+                    <div class="mfooter__calendar-describe">26 апреля Финал<br> Акселератора института<br> им. Шифферса</div>
+                    <div class="mfooter__calendar-arrow"></div></a></div>
+                <div class="mfooter__slide"><a class="mfooter__calendar-item" href="">
+                    <div class="mfooter__calendar-date">
+                      <div class="mfooter__calendar-day">28</div>
+                      <div class="mfooter__calendar-month">февраль</div>
+                      <div class="mfooter__calendar-time">12:00</div>
+                    </div>
+                    <div class="mfooter__calendar-describe">На чем мечтают делать деньги<br> современные школьники<br> (1 часть)</div>
+                    <div class="mfooter__calendar-arrow"></div></a></div>
+                <div class="mfooter__slide"><a class="mfooter__calendar-item" href="">
+                    <div class="mfooter__calendar-date">
+                      <div class="mfooter__calendar-day">04</div>
+                      <div class="mfooter__calendar-month">март</div>
+                      <div class="mfooter__calendar-time">12:00</div>
+                    </div>
+                    <div class="mfooter__calendar-describe">Online-вебинар для<br> поступающих в магистратуру<br> в 2019 учебном году.</div>
+                    <div class="mfooter__calendar-arrow"></div></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="mfooter__head">
+            <div class="mfooter__request">
+              <div class="mfooter__button">Задать вопрос в мессенджере </div>
+              <div class="mfooter__messengers">
+                <div class="mfooter__messenger"><a href="#">Telegram</a></div>
+                <div class="mfooter__messenger"><a href="#">WhatsApp</a></div>
+                <div class="mfooter__messenger"><a href="#">Вконтакте</a></div>
+                <div class="mfooter__messenger"><a href="#">Facebook</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="mfooter__body">
+            <div class="mfooter__links">
+              <div class="mfooter__link"><a href="#">Мероприятия</a></div>
+              <div class="mfooter__link"><a href="#">Абитуриентам</a></div>
+              <div class="mfooter__link"><a href="#">О факультете</a></div>
+              <div class="mfooter__link"><a href="#">Документы</a></div>
+            </div>
+            <div class="mfooter__conts"><a class="mfooter__phone" href="">8 (800) 500 93 71 </a><a class="mfooter__mail" href="">info@kapitany-russia.ru</a>
+              <div class="mfooter__address">Москва, <br>Стремянный пер., 36</div>
+            </div>
+          </div>
+        </div>
+        <div class="mfooter__social">
+          <div class="mfooter__social-link mfooter__social-link--insta"><a href="#" target="_blank"></a></div>
+          <div class="mfooter__social-link mfooter__social-link--ytube"><a href="#" target="_blank"></a></div>
+          <div class="mfooter__social-link mfooter__social-link--fb"><a href="#" target="_blank"></a></div>
+          <div class="mfooter__social-link mfooter__social-link--vk"><a href="#" target="_blank"></a></div>
+        </div>
+      </div>
+      <div class="footer__descktop dfooter">
+        <div class="dfooter__head">
+          <div class="container">
+            <div class="dfooter__question">Задайте <br class="br">вопрос в мессенджере</div>
+            <div class="dfooter__arrow"></div>
+            <div class="dfooter__messengers"><a class="dfooter__messenger" href="">WhatsApp</a><a class="dfooter__messenger" href="">Telegram</a><a class="dfooter__messenger" href="">Вконтакте</a><a class="dfooter__messenger" href="">Facebook</a></div><a class="dfooter__recall" href="">Перезвоните мне</a>
+          </div>
+        </div>
+        <div class="dfooter__body">
+          <div class="container"> 
+            <div class="dfooter__logo"><a class="logo" href="">
+                <div class="logo__text">Капитаны</div></a></div>
+            <div class="dfooter__menus">
+              <div class="dfooter__menu"><a class="dfooter__menu-title" href="#">Абитуриенту</a><a class="dfooter__menu-link" href="#">Бакалавриат</a><a class="dfooter__menu-link" href="#">Магистратура</a><a class="dfooter__menu-link" href="#">Дни открытых дверей</a><a class="dfooter__menu-link" href="#">Мероприятия</a></div>
+              <div class="dfooter__menu"><a class="dfooter__menu-title" href="#">О факультете</a><a class="dfooter__menu-link" href="#">История</a><a class="dfooter__menu-link" href="#">Программа обучения</a><a class="dfooter__menu-link" href="#">Руководство</a><a class="dfooter__menu-link" href="#">Преподаватели</a></div>
+              <div class="dfooter__menu"><a class="dfooter__menu-title" href="#">Документы</a><a class="dfooter__menu-link" href="#">Договор на оказание <br class="br">образовательных услуг</a><a class="dfooter__menu-link" href="#">Реквизиты</a><a class="dfooter__menu-link" href="#">Устав</a></div>
+            </div>
+            <div class="dfooter__conts"><a class="dfooter__phone" href="">8 (800) 500 93 71 </a><a class="dfooter__mail" href="">info@kapitany-russia.ru</a>
+              <div class="dfooter__social">
+                <div class="dfooter__social-link dfooter__social-link--insta"><a href="#" target="_blank"></a></div>
+                <div class="dfooter__social-link dfooter__social-link--ytube"><a href="#" target="_blank"></a></div>
+                <div class="dfooter__social-link dfooter__social-link--fb"><a href="#" target="_blank"></a></div>
+                <div class="dfooter__social-link dfooter__social-link--vk"><a href="#" target="_blank"></a></div>
+              </div>
+              <div class="dfooter__address">Москва, Стремянный пер., 36</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__univer">Российский Экономический <br class="br">Университет имени Г. В. Плеханова</div>
+          <div class="footer__confidential"> <a href="#">Политика конфиденциальности</a></div>
+          <div class="footer__copy">
+            <div class="footer__copy-name">Дизайн и разработка – </div>
+            <div class="footer__copy-link"><a href="#">insaim</a></div>
+          </div>
+        </div>
+      </div>
     </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    
-    <script type="text/javascript" src="https://xn----7sba5acai1akfpnah1l.xn--p1ai/wp-content/themes/captains-theme/assets/js/script.js?ver=1591738259"></script>
-    
-  
-  <script src="js/svg4everybody.min.js"></script>
-  <script>svg4everybody();</script>
-  <script src="js/main.min.js"></script>
+    <script type="text/javascript" src="bundles/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
   </body>
 </html>

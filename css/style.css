@@ -328,16 +328,16 @@ iframe {
 /* Circe-Regular */
 @font-face {
   font-family: "Circe";
-  src: url("../fonts/Circe-Regular.woff2") format("woff2"), url("../fonts/Circe-Regular.woff") format("woff");
+  font-style: normal;
   font-weight: 400;
-  font-style: normal; }
+  src: url("../fonts/Circe-Regular.ttf"); }
 
 /* Circe-Bold */
 @font-face {
   font-family: "Circe";
-  src: url("../fonts/Circe-Bold.woff2") format("woff2"), url("../fonts/Circe-Bold.woff") format("woff");
+  font-style: normal;
   font-weight: 600;
-  font-style: normal; }
+  src: url("../fonts/Circe-Bold.ttf"); }
 
 * {
   -webkit-box-sizing: border-box;

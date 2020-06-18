@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Блог - пост</title>
+    <title>Блог</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/blog.min.css" rel="stylesheet">
@@ -19,7 +19,7 @@
     </noscript>
     <!-- /Yandex.Metrika counter -->
     
-    <div class="main main--post" style="">
+    <div class="main main--news" style="">
         <div class="main__inner">
     
         <div class="main__header">
@@ -199,79 +199,227 @@
             <div class="main__body">
                 <div class="container">
                     <h1 class="main__title">
-                        Никита Рождественский, преподаватель по дисциплине «Инновационное                 </h1>
+              Блог                </h1>
                 </div>
             </div>
     
         </div>
     </div>
     
-    <article class="post">
-        <img class="post__main-image" src="img/blog/post-image-main.png" alt="Никита Рождественский">
-        <span class="post__date">9 июня 2020</span>
-        <h2>Никита Рождественский, делится мыслями об опыте работы с нашими студентами и причине преподавания именно в Капитанах.</h2>
-        <p>Оно само случилось, и смысл этого для меня вырисовывается по-новому каждый день. Сейчас он в 3 вещах:</p>
-        <ol>
-            <li><span>Я в 2 раза старше многих студентов. Для меня это буквально окошко и контакт в совсем другое поколение.</span></li>
-            <li><span>Я приношу в среду начинающих предпринимателей штуки из очень большого бизнеса и смотрю, как они работают тут. И наоборот - то, что мы рождаем с Капитанами, я беру в свою работу со взрослыми компаниями. Очень интересно, как идея рождается на стыке этих разных видений и перспектив. В этом смысле я в очень привилегированном положении, я слышу и тех, и тех и как бы соединяю их.</span></li>
-            <li><span>Если прям честно, я очень вдохновлен потенциалом людей: и когда происходит раскрытие человека и я являюсь его частью, и когда мы вместе со-создаём продукт.</span></li>
-        </ol>
-        <div class="post__image-wrapper">
-            <figure>
-                <img src="img/blog/post-image-1.png" alt="Никита Рождественский">
-                <figcaption>Подпись к фото номер 1</figcaption>
-            </figure>
-            <figure>
-                <img src="img/blog/post-image-2.png" alt="Никита Рождественский">
-                <figcaption>Подпись к фото номер 2</figcaption>
-            </figure>
+    <section class="blog">
+      <div class="blog__wrapper">
+        <div class="blog__sorting">
+          <select class="visually-hidden">
+            <option value="Сначала новые">Сначала новые</option>
+            <option value="Сначала новые">Сначала новые</option>
+            <option value="Сначала старые">Сначала старые</option>
+          </select>
         </div>
-        <blockquote>
-            <p>Я не смотрю на преподавание как на «я делюсь экспертными знаниями», это скорее соавторство со студентами. Мы вместе создаём что-то, поэтому я так же заинтересован в том, что происходит в классе. Как результат нашей работы, получается некий интеллектуальный продукт. Выходит, что я так же учусь, как и преподаю. Одновременно. И вот этот процесс меня вдохновляет.</p>
-        </blockquote>
-        <p>Многие студенты даже после окончания дисциплины общаются с Никитой, черпают новые знания, пользуются его советами&#128522;</p>
-        <ul>
-            <li><span>Я сейчас независимый директор в трёх растущих компаниях.</span></li>
-            <li><span>Я занимаюсь тем, что повышаю эффективность бизнеса.</span></li>
-            <li><span>Я преподаю в Капитанах, веду несколько частных проектов, а также частных клиентов как ментор и наставник.</span></li>
+        <ul class="blog__list">
+          <li class="blog__item">
+            <a class="blog__item-image-link" href="#">
+              <img class="blog__item-image" src="img/blog/image-1.png" alt="Изображение записи">
+            </a>
+            <div class="blog__item-wrapper">
+              <p class="blog__item-date">12 июня 2020</p>
+              <h2 class="blog__item-title">
+                <a class="blog__item-title-link" href="#">Дизайн-мышление: что это и зачем мы изучаем?</a>
+              </h2>
+              <p class="blog__item-description">Главная цель дизайн-мышления - выйти за пределы существующих стереотипов и привычных способов решения задачи.</p>
+              <a class="blog__item-link button" href="#">Подробнее</a>
+            </div>
+          </li>
+          <li class="blog__item">
+            <a class="blog__item-image-link" href="#">
+              <img class="blog__item-image" src="img/blog/image-2.png" alt="Изображение записи">
+            </a>
+            <div class="blog__item-wrapper">
+              <p class="blog__item-date">10 июня 2020</p>
+              <h2 class="blog__item-title">
+                <a class="blog__item-title-link" href="#">Стартовал модуль «Наставники»</a>
+              </h2>
+              <p class="blog__item-description">У наших студентов 1-курса 11 мая стартовал модуль «НАСТАВНИКИ»
+                Модуль проходит в онлайн-формате</p>
+              <a class="blog__item-link button" href="#">Подробнее</a>
+            </div>
+          </li>
+          <li class="blog__item">
+            <a class="blog__item-image-link" href="/post.html">
+              <img class="blog__item-image" src="img/blog/image-3.png" alt="Изображение записи">
+            </a>
+            <div class="blog__item-wrapper">
+              <p class="blog__item-date">1 июня 2020</p>
+              <h2 class="blog__item-title">
+                <a class="blog__item-title-link" href="/post.html">Интервью с Никитой Рождественским</a>
+              </h2>
+              <p class="blog__item-description">Никита Рождественский, преподаватель по дисциплине «Инновационное предпринимательство» на Факультете бизнеса «Капитаны», делится мыслями об опыте...</p>
+              <a class="blog__item-link button" href="/post.html">Подробнее</a>
+            </div>
+          </li>
+          <li class="blog__item">
+            <a class="blog__item-image-link" href="#">
+              <img class="blog__item-image" src="img/blog/image-1.png" alt="Изображение записи">
+            </a>
+            <div class="blog__item-wrapper">
+              <p class="blog__item-date">29 мая 2020</p>
+              <h2 class="blog__item-title">
+                <a class="blog__item-title-link" href="#">Дизайн-мышление: что это и зачем мы изучаем?</a>
+              </h2>
+              <p class="blog__item-description">Главная цель дизайн-мышления - выйти за пределы существующих стереотипов и привычных способов решения задачи.</p>
+              <a class="blog__item-link button" href="#">Подробнее</a>
+            </div>
+          </li>
+          <li class="blog__item">
+            <a class="blog__item-image-link" href="#">
+              <img class="blog__item-image" src="img/blog/image-2.png" alt="Изображение записи">
+            </a>
+            <div class="blog__item-wrapper">
+              <p class="blog__item-date">23 мая 2020</p>
+              <h2 class="blog__item-title">
+                <a class="blog__item-title-link" href="#">Стартовал модуль «Наставники»</a>
+              </h2>
+              <p class="blog__item-description">У наших студентов 1-курса 11 мая стартовал модуль «НАСТАВНИКИ»
+                Модуль проходит в онлайн-формате</p>
+              <a class="blog__item-link button" href="#">Подробнее</a>
+            </div>
+          </li>
+          <li class="blog__item">
+            <a class="blog__item-image-link" href="#">
+              <img class="blog__item-image" src="img/blog/image-3.png" alt="Изображение записи">
+            </a>
+            <div class="blog__item-wrapper">
+              <p class="blog__item-date">20 мая 2020</p>
+              <h2 class="blog__item-title">
+                <a class="blog__item-title-link" href="#">Интервью с Никитой Рождественским</a>
+              </h2>
+              <p class="blog__item-description">Никита Рождественский, преподаватель по дисциплине «Инновационное предпринимательство» на Факультете бизнеса «Капитаны», делится мыслями об опыте...</p>
+              <a class="blog__item-link button" href="#">Подробнее</a>
+            </div>
+          </li>
+          <li class="blog__item">
+            <a class="blog__item-image-link" href="#">
+              <img class="blog__item-image" src="img/blog/image-1.png" alt="Изображение записи">
+            </a>
+            <div class="blog__item-wrapper">
+              <p class="blog__item-date">19 мая 2020</p>
+              <h2 class="blog__item-title">
+                <a class="blog__item-title-link" href="#">Дизайн-мышление: что это и зачем мы изучаем?</a>
+              </h2>
+              <p class="blog__item-description">Главная цель дизайн-мышления - выйти за пределы существующих стереотипов и привычных способов решения задачи.</p>
+              <a class="blog__item-link button" href="#">Подробнее</a>
+            </div>
+          </li>
+          <li class="blog__item">
+            <a class="blog__item-image-link" href="#">
+              <img class="blog__item-image" src="img/blog/image-2.png" alt="Изображение записи">
+            </a>
+            <div class="blog__item-wrapper">
+              <p class="blog__item-date">15 мая 2020</p>
+              <h2 class="blog__item-title">
+                <a class="blog__item-title-link" href="#">Стартовал модуль «Наставники»</a>
+              </h2>
+              <p class="blog__item-description">У наших студентов 1-курса 11 мая стартовал модуль «НАСТАВНИКИ»
+                Модуль проходит в онлайн-формате</p>
+              <a class="blog__item-link button" href="#">Подробнее</a>
+            </div>
+          </li>
+          <li class="blog__item">
+            <a class="blog__item-image-link" href="#">
+              <img class="blog__item-image" src="img/blog/image-3.png" alt="Изображение записи">
+            </a>
+            <div class="blog__item-wrapper">
+              <p class="blog__item-date">10 мая 2020</p>
+              <h2 class="blog__item-title">
+                <a class="blog__item-title-link" href="#">Интервью с Никитой Рождественским</a>
+              </h2>
+              <p class="blog__item-description">Никита Рождественский, преподаватель по дисциплине «Инновационное предпринимательство» на Факультете бизнеса «Капитаны», делится мыслями об опыте...</p>
+              <a class="blog__item-link button" href="#">Подробнее</a>
+            </div>
+          </li>
+          <li class="blog__item">
+            <a class="blog__item-image-link" href="#">
+              <img class="blog__item-image" src="img/blog/image-1.png" alt="Изображение записи">
+            </a>
+            <div class="blog__item-wrapper">
+              <p class="blog__item-date">3 мая 2020</p>
+              <h2 class="blog__item-title">
+                <a class="blog__item-title-link" href="#">Дизайн-мышление: что это и зачем мы изучаем?</a>
+              </h2>
+              <p class="blog__item-description">Главная цель дизайн-мышления - выйти за пределы существующих стереотипов и привычных способов решения задачи.</p>
+              <a class="blog__item-link button" href="#">Подробнее</a>
+            </div>
+          </li>
+          <li class="blog__item">
+            <a class="blog__item-image-link" href="#">
+              <img class="blog__item-image" src="img/blog/image-2.png" alt="Изображение записи">
+            </a>
+            <div class="blog__item-wrapper">
+              <p class="blog__item-date">1 мая 2020</p>
+              <h2 class="blog__item-title">
+                <a class="blog__item-title-link" href="#">Стартовал модуль «Наставники»</a>
+              </h2>
+              <p class="blog__item-description">У наших студентов 1-курса 11 мая стартовал модуль «НАСТАВНИКИ»
+                Модуль проходит в онлайн-формате</p>
+              <a class="blog__item-link button" href="#">Подробнее</a>
+            </div>
+          </li>
+          <li class="blog__item">
+            <a class="blog__item-image-link" href="#">
+              <img class="blog__item-image" src="img/blog/image-3.png" alt="Изображение записи">
+            </a>
+            <div class="blog__item-wrapper">
+              <p class="blog__item-date">30 апреля 2020</p>
+              <h2 class="blog__item-title">
+                <a class="blog__item-title-link" href="#">Интервью с Никитой Рождественским</a>
+              </h2>
+              <p class="blog__item-description">Никита Рождественский, преподаватель по дисциплине «Инновационное предпринимательство» на Факультете бизнеса «Капитаны», делится мыслями об опыте...</p>
+              <a class="blog__item-link button" href="#">Подробнее</a>
+            </div>
+          </li>
+          <li class="blog__item">
+            <a class="blog__item-image-link" href="#">
+              <img class="blog__item-image" src="img/blog/image-1.png" alt="Изображение записи">
+            </a>
+            <div class="blog__item-wrapper">
+              <p class="blog__item-date">26 апреля 2020</p>
+              <h2 class="blog__item-title">
+                <a class="blog__item-title-link" href="#">Дизайн-мышление: что это и зачем мы изучаем?</a>
+              </h2>
+              <p class="blog__item-description">Главная цель дизайн-мышления - выйти за пределы существующих стереотипов и привычных способов решения задачи.</p>
+              <a class="blog__item-link button" href="#">Подробнее</a>
+            </div>
+          </li>
+          <li class="blog__item">
+            <a class="blog__item-image-link" href="#">
+              <img class="blog__item-image" src="img/blog/image-2.png" alt="Изображение записи">
+            </a>
+            <div class="blog__item-wrapper">
+              <p class="blog__item-date">20 апреля 2020</p>
+              <h2 class="blog__item-title">
+                <a class="blog__item-title-link" href="#">Стартовал модуль «Наставники»</a>
+              </h2>
+              <p class="blog__item-description">У наших студентов 1-курса 11 мая стартовал модуль «НАСТАВНИКИ»
+                Модуль проходит в онлайн-формате</p>
+              <a class="blog__item-link button" href="#">Подробнее</a>
+            </div>
+          </li>
+          <li class="blog__item">
+            <a class="blog__item-image-link" href="#">
+              <img class="blog__item-image" src="img/blog/image-3.png" alt="Изображение записи">
+            </a>
+            <div class="blog__item-wrapper">
+              <p class="blog__item-date">14 апреля 2020</p>
+              <h2 class="blog__item-title">
+                <a class="blog__item-title-link" href="#">Интервью с Никитой Рождественским</a>
+              </h2>
+              <p class="blog__item-description">Никита Рождественский, преподаватель по дисциплине «Инновационное предпринимательство» на Факультете бизнеса «Капитаны», делится мыслями об опыте...</p>
+              <a class="blog__item-link button" href="#">Подробнее</a>
+            </div>
+          </li>
         </ul>
-        <h3>Достижения за последние 5 лет в сфере образования и политики</h3>
-        <p>Последние 5 лет я занимаюсь строительством акселерационных программ. К этому моменту я построил уже 5 акселераторов, поменторил около 2000 стартапов и выпустил 200+ учеников, помимо констатационной деятельности. Ну и до этого у меня был опыт в корпорациях - 10 лет, 12 индустрий, 6 стран. Я занимался управлением проектами и изменениями в больших масштабах и больших компаниях.</p>
-        <figure>
-            <img src="img/blog/post-image-3.png" alt="Никита Рождественский">
-            <figcaption>Подпись к фото номер 1</figcaption>
-        </figure>
-        <p>Я сейчас независимый директор в трёх растущих компаниях. Я занимаюсь тем, что повышаю эффективность бизнеса. Я преподаю в Капитанах, веду несколько частных проектов, а также частных клиентов как ментор и наставник. Последние 5 лет я занимаюсь строительством акселерационных программ. К этому моменту я построил уже 5 акселераторов, поменторил около 2000 стартапов и выпустил 200+ учеников, помимо констатационной деятельности. Ну и до этого у меня был опыт в корпорациях - 10 лет, 12 индустрий, 6 стран. Я занимался управлением проектами и изменениями в больших масштабах и больших компаниях.</p>
-        <div class="post__share">
-            <span class="post__share-text">Поделиться в социальных сетях:</span>
-            <ul class="post__share-list">
-                <li class="post__share-item">
-                    <a class="post__share-item-link post__share-item-link--facebook" href="http://www.facebook.com/sharer/sharer.php?s=100&p%5Btitle%5D=[TITLE]&p%5Bsummary%5D=[TEXT]&p%5Burl%5D=[LINK]&p%5Bimages%5D%5B0%5D=[IMAGE]">
-                        <svg width="35" height="35">
-                            <use xlink:href="img/sprite.svg#icon-fb"></use>
-                        </svg>
-                        <span class="visually-hidden">Facebook</span>
-                    </a>
-                </li>
-                <li class="post__share-item">
-                    <a class="post__share-item-link post__share-item-link--vk" href="https://vk.com/share.php?url=[LINK]">
-                        <svg width="35" height="35">
-                            <use xlink:href="img/sprite.svg#icon-vk"></use>
-                        </svg>
-                        <span class="visually-hidden">Vkontakte</span>
-                    </a>
-                </li>
-                <li class="post__share-item">
-                    <a class="post__share-item-link post__share-item-link--twitter" href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Ffiddle.jshell.net%2F_display%2F&text=[TITLE]&url=[LINK]">
-                        <svg width="35" height="35">
-                            <use xlink:href="img/sprite.svg#icon-twitter"></use>
-                        </svg>
-                        <span class="visually-hidden">Twitter</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </article>
+        <button class="blog__load-more-button button" type="button">Загрузить ещё</button>
+      </div>
+    </section>
       
     
     <div class="footer">
